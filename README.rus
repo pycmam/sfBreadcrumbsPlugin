@@ -1,0 +1,5 @@
+Установка
+==========================================================================================
+git submodule add git@github.com:pycmam/sfBreadcrumbsPlugin.git plugins/sfBreadcrumbsPlugin
+cd plugins/sfBreadcrumbsPlugin
+git submodule update

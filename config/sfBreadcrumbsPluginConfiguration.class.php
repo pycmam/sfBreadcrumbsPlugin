@@ -24,9 +24,8 @@ class sfBreadcrumbsPluginConfiguration extends sfPluginConfiguration
      */
     public function onLoad(sfEvent $event)
     {
-        $breadcrumbs = new sfBreadcrumbCollection;
-        $breadcrumbs->add(new sfBreadcrumbItem('Homepage', '@homepage'));
-        $context = $event->getSubject();
-        $context->set('breadcrumbs', $breadcrumbs);
+        $breadcrumbs = new sfBreadcrumbCollection();
+        $breadcrumbs->add(new sfBreadcrumbItem('Homepage', 'homepage'));
+        $event->getSubject()->set('breadcrumbs', $breadcrumbs);
     }
 }

@@ -12,7 +12,7 @@ $devider = isset($devider) ? $sf_data->getRaw('devider') : '&raquo;';
 use_helper('I18N');
 ?>
 
-<?php if (($count = $breadcrumbs->count()) > 1): ?>
+<?php if (($count = $breadcrumbs->count())): ?>
 <ul>
     <?php foreach ($breadcrumbs->getItems() as $key => $item): ?>
     <li>

@@ -13,7 +13,7 @@ use_helper('I18N');
 ?>
 
 <?php if (($count = $breadcrumbs->count())): ?>
-<ul>
+<ul class="breadcrumbs">
     <?php foreach ($breadcrumbs->getItems() as $key => $item): ?>
     <li>
         <?php if ($item->getUri() && $count-1 > $key): ?>
